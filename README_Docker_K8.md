@@ -1,5 +1,7 @@
 ## What are Microservices?
 
+![ms_diagram.png](file%2Fms_diagram.png)
+
 - Microservices, in simple terms, is an architectural approach where a complex application is built as a collection of small, independent, and loosely coupled services. Each service focuses on performing a specific business function and operates as a separate and autonomous unit.
 
 
@@ -50,6 +52,15 @@ N-tier architecture and microservices architecture are two different approaches 
 
 
 - Microservices architecture introduces a higher level of complexity due to the larger number of services, inter-service communication, and management of distributed systems. It requires proper design, monitoring, and orchestration mechanisms to ensure effective coordination and scalability.
+
+## What is Docker?
+
+
+
+- Docker is a software platform that allows you to package, distribute, and run applications in a containerized environment.
+
+
+- Think of a container as a lightweight, isolated package that contains everything an application needs to run, such as the code, runtime, system tools, and libraries. Docker provides tools and a runtime environment to create and manage these containers.
 
 ## What is Containerisation?
 
