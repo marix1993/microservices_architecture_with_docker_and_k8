@@ -4,12 +4,12 @@ Docker.
 ## How to download image?
 
 1. Open a Git Bash terminal.
-2. Use d`ocker run hello-world` to install the `hello world` image.
+2. Use `docker run hello-world` to install the `hello world` image.
 3. Use `docker images` to see all the images that are installed.
 
 ## How to run an image?
 
-1. Use `docker run -d -p 80:80` nginx to install nginx image.
+1. Use `docker run -d -p 80:80 nginx` to install nginx image.
 
 - d is to make sure that we wont be locked in a terminal
 - p is the port
@@ -28,7 +28,7 @@ Docker.
 ### How to change Nginx HTML
 
 1. Firstly use `docker ps` to find the container ID for Nginx
-2. Create an alias for docker using `alias docker="winpty docker`
+2. Create an alias for docker using `alias docker="winpty docker"`
 3. Run `docker exec -it <container ID> sh` to go to container location
 4. We can now use linux commands to navigate to the nginx location
 
@@ -47,7 +47,19 @@ Run this command to navigate to folder:
 
 ![welcome.png](file%2Fwelcome.png)
 
+## Pushing a Container Image and any changes, to your Docker Hub repo
+1. Run the command `docker commit <container_id> <your_new_image_name>`
 
+2. Run `docker tag <your_new_image_name> <dockerhub_username>/<repository_name>:<newtag>`
+
+3. Run docker `login` and log in to your docker hub
+
+4. Run `docker push <dockerhub_username>/<repository_name>:<tag>`
+5. To save and push any changes after completing this, run `docker commit <container id>` and then `docker push <dockerhub_username>/<repository_name>:<tagname>`
+
+Your changes will now be pushed to your Docker Hub repo
+
+**To download and run an image on port 90, use `docker run -d -p 90:80 <username>/<repo>:<tagname>`**
 
 
 
