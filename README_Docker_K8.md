@@ -55,7 +55,7 @@ N-tier architecture and microservices architecture are two different approaches 
 
 ## What is Docker?
 
-
+![docker_diagram.png](file%2Fdocker_diagram.png)
 
 - Docker is a software platform that allows you to package, distribute, and run applications in a containerized environment.
 
