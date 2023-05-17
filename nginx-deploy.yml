@@ -19,6 +19,6 @@ spec:
     spec: 
       containers:
       - name: nginx
-        image: marix1993/sparta_app:v1
+        image: marix1993/tech221-nginx:v2
         ports:
         - containerPort: 80
