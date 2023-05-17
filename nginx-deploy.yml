@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment # pod - service what 
+
+metadata: 
+  name: nginx-deployment # naming deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginx # look for the label to match with k8 service
+
+  replicas: 3
+
+  template:
+    metadata:
+      labels:
+        app: nginx
+  
+    spec:
+      containers:
+      - name: nginx
+        image: marix1993/sparta_app:latest
+        ports:
+        - containerPort: 80
